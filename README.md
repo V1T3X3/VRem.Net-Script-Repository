@@ -9,10 +9,10 @@ This is the repository containing the core scripts behind VRem.Net
 - IResettable.cs - C# interface for facilitating object deletion on user spawnable objects. Attached on all deletable objects.
 - ~Mains.cs~ - not in use.
 - PCSummary.cs - handles getting PC configuration information for the summary page in the PC object.
-- RackMounting.cs - handles interaction layer assignment for Rack mountable objects.
-- ServerBV.cs - collates and manipulates all attached services in a Server object including IP assignment, Web Services, DNS services, and DHCP services. Attached on a Server object.
+- RackMounting.cs - handles interaction layer assignment for Rack mountable objects. Attached to the Switch and Server objects.
+- ServerBV.cs - collates and manipulates all attached services in a Server object including IP assignment, Web Services, DNS services, and DHCP services. Attached on the Server object.
 - UniqueID.cs - generates a globally unique ID (GUID) on every object. Each startup of the application generates a new GUID for the object. Attached on all objects.
-- WebService.cs - handles serving and setting image paths for web service. Attached to a Server object.
+- WebService.cs - handles serving and setting image paths for web service. Attached to the Server object.
 - XRSceneFadeIn.cs - handles fade in from black on app startup.
 - callForDestroy.cs - handles disabling all current connections before the object is deleted. Attached to all spawnable objects.
 - castGUID.cs - handles transmitting the object's GUID through the Ethernet cable. Attached on all objects with an Ethernet port.
@@ -26,7 +26,7 @@ This is the repository containing the core scripts behind VRem.Net
 - domainName.cs - handles the creation and deletion of DNS entries and handles replies to DNS requests. Attached to the Server object.
 - fader.cs - script that fade-ins or out of black at boot-up and shutdown of app.
 - faderStarter.cs - script that instantiates the fade-in sequence at startup.
-- foveator.cs - experimental fixed foveated rendering script. Not in use.
+- ~foveator.cs~ - abandoned experimental fixed foveated rendering script. Not in use.
 - getSib.cs - handles the transfer and serving of a connected device's GUID. Attached to the Ethernet Cable object.
 - hasRoute.cs - functionally, used to identify Router objects. Not in use.
 - imagePop.cs - populates the Web Service component of a Server with the available images loaded in C:\Users\*username*\AppData\LocalLow\DefaultCompany\Demo\Sites. Attached to the Server object.
